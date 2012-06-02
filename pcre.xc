@@ -1,4 +1,4 @@
-$(PWD)/libpcre.so
+gtm_dist/plugin/libpcre.so
 version: gtm_char_t* version()
 config: gtm_int_t config(I:gtm_char_t*, O:gtm_char_t*[32], O:gtm_int_t*, O:gtm_char_t*[1024], O:gtm_long_t*)
 compile: gtm_int_t compile(I:gtm_char_t*, I:gtm_char_t*, O:gtm_char_t*[32], O:gtm_ulong_t*, O:gtm_char_t**, O:gtm_int_t*, I:gtm_char_t*, I:gtm_long_t, I:gtm_long_t)

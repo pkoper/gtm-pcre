@@ -1,0 +1,11 @@
+$(PWD)/libpcre.so
+version: gtm_char_t* version()
+config: gtm_int_t config(I:gtm_char_t*, O:gtm_char_t*[32], O:gtm_int_t*, O:gtm_char_t*[1024], O:gtm_long_t*)
+compile: gtm_int_t compile(I:gtm_char_t*, I:gtm_char_t*, O:gtm_char_t*[32], O:gtm_ulong_t*, O:gtm_char_t**, O:gtm_int_t*, I:gtm_char_t*, I:gtm_long_t, I:gtm_long_t)
+exec: gtm_int_t exec(I:gtm_ulong_t, I:gtm_string_t*, I:gtm_int_t, I:gtm_int_t, I:gtm_char_t*, O:gtm_char_t*[32])
+ovector: gtm_int_t ovector(I:gtm_ulong_t, I:gtm_int_t, O:gtm_int_t*)
+ovecsize: gtm_int_t ovecsize(I:gtm_ulong_t, O:gtm_int_t*)
+fullinfo: gtm_int_t fullinfo(I:gtm_ulong_t, I:gtm_char_t*, O:gtm_char_t*[32], O:gtm_int_t*, O:gtm_string_t*[1024], O:gtm_long_t*)
+nametable: gtm_int_t nametable(I:gtm_ulong_t, I:gtm_int_t, O:gtm_int_t*, O:gtm_char_t*[64])
+free: gtm_int_t ofree(I:gtm_ulong_t)
+stackusage: gtm_int_t stackusage()

@@ -14,7 +14,7 @@ all:
 #	available since GT.M V5.5-000, for older GT.M versions place pcre.m
 #	and pcreexamples.m in your routines directory, and pcre.env and
 #	libpcre.so in a directory of your choice, and update pcre.xc and
-#	.profile accordingly to point the those files.
+#	.profile accordingly to point those files.
 #
 #	The $(gtm_dist)/plugin/o directory should be writable the GT.M user.
 #

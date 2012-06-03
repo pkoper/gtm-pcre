@@ -94,7 +94,7 @@ replace
 api
 	n subject,pattern,options,offset,ref,count,i,begin,end,s,name,n
 
-	; Setup exception trap as in myexception2^pcreexample
+	; Setup exception trap as in myexception2^pcreexamples
 	s $zt="d trap^pcre("_$st_") zg "_$zl_":apitrap^pcreexamples"
 
 	s subject="The quick brown fox "_$c(10)_"jumps over the lazy dog"
@@ -435,9 +435,9 @@ nohandler
 	w "will never be written",!
 	q
 ;
-; GTM>d nohandler^pcreexample
+; GTM>d nohandler^pcreexamples
 ; %PCRE-E-COMPILE, Pattern compilation failed, unmatched parentheses in a <-- HERE
-; %PCRE-I-RTSLOC,          At M source location nohandler+2^pcreexample
+; %PCRE-I-RTSLOC,          At M source location nohandler+2^pcreexamples
 ; %GTM-E-SETECODE, Non-empty value assigned to $ECODE (user-defined error trap)
 ; %GTM-I-RTSLOC,          At M source location trap+32^pcre
 ; $ (GT.M image has been terminated)
@@ -458,7 +458,7 @@ mytrap1
 	s $ec=""
 	q
 ;
-; GTM>d myexception1^pcreexample
+; GTM>d myexception1^pcreexamples
 ; it's a trap
 ; ,U16392,
 ; GTM>
@@ -479,9 +479,9 @@ mytrap2
 	s $ec=""
 	q
 ;
-; GTM>d myexception2^pcreexample
+; GTM>d myexception2^pcreexamples
 ; %PCRE-E-COMPILE, Pattern compilation failed, unmatched parentheses in a <-- HERE
-; %PCRE-I-RTSLOC,          At M source location myexception2+2^pcreexample
+; %PCRE-I-RTSLOC,          At M source location myexception2+2^pcreexamples
 ; it's a trap
 ; ,U16392,
 ; GTM>
@@ -515,9 +515,9 @@ mytrap3
 	s $ec=""
 	q
 ;
-; GTM>d myexception3^pcreexample
+; GTM>d myexception3^pcreexamples
 ; %PCRE-E-COMPILE, Pattern compilation failed, unknown reason
-; %PCRE-I-RTSLOC,          At M source location myexception3+2^pcreexample
+; %PCRE-I-RTSLOC,          At M source location myexception3+2^pcreexamples
 ; it's a trap
 ; ,U16392,
 ; GTM>
@@ -546,77 +546,77 @@ mytrap3
 ;
 routines
 	w ">> test^pcreexamples",!
-	d test^pcreexample
+	d test^pcreexamples
 
 	w !,">> match^pcreexamples",!
-	d match^pcreexample
+	d match^pcreexamples
 
 	w !,">> global^pcreexamples",!
-	d global^pcreexample
+	d global^pcreexamples
 
 	w !,">> replace^pcreexamples",!
-	d replace^pcreexample
+	d replace^pcreexamples
 
 	w !,">> p5global^pcreexamples",!
-	d p5global^pcreexample
+	d p5global^pcreexamples
 
 	w !,">> p5replace^pcreexamples",!
-	d p5replace^pcreexample
+	d p5replace^pcreexamples
 
 	w !,">> p5lf^pcreexamples",!
-	d p5lf^pcreexample
+	d p5lf^pcreexamples
 
 	w !,">> p5nl^pcreexamples",!
-	d p5nl^pcreexample
+	d p5nl^pcreexamples
 
 	w !,">> version^pcreexamples",!
-	d version^pcreexample
+	d version^pcreexamples
 
 	w !,">> newline^pcreexamples",!
-	d newline^pcreexample
+	d newline^pcreexamples
 
 	w !,">> utf8support^pcreexamples",!
-	d utf8support^pcreexample
+	d utf8support^pcreexamples
 
 	w !,">> stackusage^pcreexamples",!
-	d stackusage^pcreexample
+	d stackusage^pcreexamples
 
 	w !,">> nolocale^pcreexamples",!
-	d nolocale^pcreexample
+	d nolocale^pcreexamples
 
 	w !,">> isolocale^pcreexamples",!
-	d isolocale^pcreexample
+	d isolocale^pcreexamples
 
 	w !,">> utflocale^pcreexamples",!
-	d utflocale^pcreexample
+	d utflocale^pcreexamples
 
 	w !,">> envlocale^pcreexamples",!
-	d envlocale^pcreexample
+	d envlocale^pcreexamples
 
 	w !,">> limits^pcreexamples",!
-	d limits^pcreexample
+	d limits^pcreexamples
 
 	w !,">> longrun^pcreexamples",!
 	w "(skipped, uncomment to raise the exception)",!
-	; d longrun^pcreexample
+	; d longrun^pcreexamples
 
 	w !,">> shortrun^pcreexamples",!
-	d shortrun^pcreexample
+	d shortrun^pcreexamples
 
 	w !,">> enforcedlimit^pcreexamples",!
 	w "(skipped, uncomment to raise the exception)",!
-	; d enforcedlimit^pcreexample
+	; d enforcedlimit^pcreexamples
 
 	w !,">> nohandler^pcreexamples",!
 	w "(skipped, uncomment to raise the exception)",!
-	; d nohandler^pcreexample
+	; d nohandler^pcreexamples
 
 	w !,">> myexception1^pcreexamples",!
-	d myexception1^pcreexample
+	d myexception1^pcreexamples
 
 	w !,">> myexception2^pcreexamples",!
-	d myexception2^pcreexample
+	d myexception2^pcreexamples
 
 	w !,">> myexception3^pcreexamples",!
-	d myexception3^pcreexample
+	d myexception3^pcreexamples
 	q
